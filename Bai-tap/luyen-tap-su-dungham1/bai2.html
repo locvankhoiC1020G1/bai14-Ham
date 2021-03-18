@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai2</title>
+</head>
+<h2 id="h2" onclick="my(9),display()">check</h2>
+<body>
+<!--Tạo hàm nhận vào một đối số dạng số, tăng giá trị đối số đó lên 1 và trả lại giá trị cho lời gọi hàm.
+Gọi hàm từ trong phần <body> của trang web và hiển thị kết quả lên màn hình.-->
+<script>
+    function my(N) {
+        return ++N;
+    }
+    function display() {
+        document.getElementById("h2").innerText = my(6);
+    }
+</script>
+</body>
+</html>
