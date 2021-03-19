@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" name="" id="bankinh" onclick="tinhChuVi(this.value)"  >
+<button onclick="tinhChuVi()">Tính chu vi</button>
+<button onclick="tinhDienTich()">Tính diện tích</button>
+<p id="hienthi"></p>
+<script>
+    function tinhChuVi(){
+        let r = document.getElementById("bankinh").value;
+        chuvi = (2 * r) * Math.PI;
+        document.getElementById("hienthi").innerHTML = chuvi.toFixed(3);
+    }
+    tinhChuVi();
+    function tinhDienTich(){
+        let r = document.getElementById("bankinh").value;
+        dientich = (r**2) * Math.PI;
+        document.getElementById("hienthi").innerHTML = dientich.toFixed(3);
+    }
+</script>
+</body>
+</html>

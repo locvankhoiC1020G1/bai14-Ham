@@ -5,16 +5,17 @@
     <title>Title</title>
 </head>
 <body>
-<input type="number" id="input">;
+<input type="number" id="input">
 <button onclick="tinhBinhPhuong()">ket qua</button>
 <p id="hienthi"></p>
 <script>
-    function tinhBinhPhuong() {
+    function tinhBinhPhuong(b) {
         let a = document.getElementById("input").value;
         ketqua = a *a;
         document.getElementById("hienthi").innerHTML = ketqua;
     }
-
+    let c = document.getElementById("input").value;
+tinhBinhPhuong();
 </script>
 </body>
 </html>
